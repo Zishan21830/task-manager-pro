@@ -1,27 +1,34 @@
 import React from 'react'
 
 // import icons from react-icons library
-import { IoMenu, IoGridOutline } from "react-icons/io5";
+import { IoMenuOutline, IoGridOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-import { PiAtomBold, PiMoonStarsLight, PiAtomLight } from "react-icons/pi";
+import { TbMoonStars } from "react-icons/tb";
+import {PiAtomBold } from "react-icons/pi";
 
 const Navbar = () => {
   return (
     // Header starts here
-    <header className='border-2 border-red-400 h-14 px-8 py-2 flex justify-between'>
+    <header className='h-14 px-8 py-2 flex justify-between'>
         {/* left container */}
         <div className='flex gap-5 items-center text-xl'>
-            <IoMenu/>
-            <PiAtomLight/>
+            <IoMenuOutline/>
+
+            {/* logo and name */}
+            <div className='flex items-center justify-center text-green font-bold'>
+            <PiAtomBold className='font-bold'/>
+            <p className='font-sen'>DoIt</p>
+            </div>
         </div>
         {/* right container */}
         <div className='flex gap-5 items-center text-xl'>
             <IoIosSearch/>
             <IoGridOutline/>
-            <PiMoonStarsLight/>
-        </div>
+            <TbMoonStars/>
+        </div>   
     </header>
     // Header ends here
+    
   )
 }
 

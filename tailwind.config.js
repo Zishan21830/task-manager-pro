@@ -6,8 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+    colors : {
+      green : "#3F9142",
+    },
     fontFamily : {
       poppins : ["Poppins", "serif"],
+      sen : ["Sen", "serif"],
     }
   },
   plugins: [],
