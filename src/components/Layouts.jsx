@@ -1,12 +1,13 @@
 import React from 'react'
-import SideBar from './SideBar.jsx'
+// import SideBar from './SideBar.jsx'
 import Navbar from './Navbar.jsx'
+import TodoHome from './TodoHome.jsx'
 
 const Layouts = () => {
   return (
     <div>
     <Navbar/>
-        {/* <SideBar/> */}
+    <TodoHome/>
     </div>
   )
 }
